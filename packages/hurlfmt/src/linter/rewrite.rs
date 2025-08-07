@@ -491,6 +491,8 @@ impl Lint for OptionKind {
             OptionKind::Variable(value) => value.lint(),
             OptionKind::Verbose(value) => value.lint(),
             OptionKind::VeryVerbose(value) => value.lint(),
+            OptionKind::Ntlm(value) => value.lint(),
+            OptionKind::Negotiate(value) => value.lint(),
         };
         s.push_str(&value);
         s

@@ -140,3 +140,15 @@ pub fn verbose() -> clap::Arg {
         .short('v')
         .num_args(0)
 }
+
+pub fn ntlm() -> clap::Arg {
+    clap::Arg::new("ntlm").long("ntlm").num_args(0)
+}
+
+pub fn user() -> clap::Arg {
+    clap::Arg::new("user").long("user").short('u').num_args(1)
+}
+
+pub fn negotiate() -> clap::Arg {
+    clap::Arg::new("negotiate").long("negotiate").num_args(0)
+}
